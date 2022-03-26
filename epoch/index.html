@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <title>Epoch Converter</title>
+</head>
+<body>
+  <main>
+    <p class="text">Convert epoch seconds to human-readable date</p>
+    <div class="current-wrapper">
+      <span>The current <a href="https://en.wikipedia.org/wiki/Unix_time" target="_blank">Unix epoch time</a> is</span>
+      <div id="current">
+        
+      </div>
+    </div>
+    <form action="">
+      <input type="number" id="epoch">
+      <input type="submit" id="submit"></input>
+      <input type="reset"></input>
+    </form>
+    <div id="result">
+      <span id="local-time"></span>
+      <span id="gmt-time"></span>
+    </div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
